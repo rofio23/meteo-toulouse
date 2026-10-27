@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Météo Toulouse en temps réel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="clair">
+  <main class="app">
+    <header class="entete">
+      <h1>Toulouse</h1>
+      <p id="date-heure" class="date-heure"></p>
+    </header>
+
+    <section class="actuel" aria-live="polite">
+      <div id="icone" class="icone" aria-hidden="true">⏳</div>
+      <div id="temperature" class="temperature">--°</div>
+      <p id="description" class="description">Chargement…</p>
+      <p id="min-max" class="min-max"></p>
+    </section>
+
+    <section class="details">
+      <div class="carte"><span class="etiquette">Ressenti</span><span id="ressenti" class="valeur">--</span></div>
+      <div class="carte"><span class="etiquette">Humidité</span><span id="humidite" class="valeur">--</span></div>
+      <div class="carte"><span class="etiquette">Vent</span><span id="vent" class="valeur">--</span></div>
+      <div class="carte"><span class="etiquette">Pression</span><span id="pression" class="valeur">--</span></div>
+    </section>
+
+    <section class="bloc">
+      <h2>Prochaines heures</h2>
+      <div id="heures" class="heures"></div>
+    </section>
+
+    <section class="bloc">
+      <h2>Prévisions sur 7 jours</h2>
+      <ul id="jours" class="jours"></ul>
+    </section>
+
+    <footer class="pied">
+      <p id="maj">Dernière mise à jour : --</p>
+      <p>Données : Open-Meteo</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
